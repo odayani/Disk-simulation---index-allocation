@@ -4,9 +4,9 @@ Disk simulation - index allocation method .
 This program simulate how disk manage the data by index allocation method.
 
 --Functions--
-:ballot_box_with_check: void decToBinary(int n, char &c) ---> save the block number that we found for saving data file at char on inedx_block .
-:ballot_box_with_check: FsFile(int _block_size)  --> initializing the FsFile object for first time
-:ballot_box_with_check: int getfile_size() const --> get the size of the file 
+:heavy_check_mark: void decToBinary(int n, char &c) ---> save the block number that we found for saving data file at char on inedx_block .
+:heavy_check_mark: FsFile(int _block_size)  --> initializing the FsFile object for first time
+:heavy_check_mark: int getfile_size() const --> get the size of the file 
 :ballot_box_with_check: int get_block_in_use() const --> get how many blocks in use for each file.
 :ballot_box_with_check: int get_index_block() const --> get the number of the index block that save the information about where the data exist .
 :ballot_box_with_check: void append_file_size(const int _file_size) --> add the size that the used added into the file on the file_size attribute of the file object.
