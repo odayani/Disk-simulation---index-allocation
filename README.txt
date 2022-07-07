@@ -1,21 +1,18 @@
 Disk simulation - index allocation method .
-Name: Or Dayani
-ID: 315710715
 
 --Description--
 This program simulate how disk manage the data by index allocation method.
 
-
 --Functions--
-void decToBinary(int n, char &c) ---> save the block number that we found for saving data file at char on inedx_block .
-FsFile(int _block_size)  --> initializing the FsFile object for first time
-int getfile_size() const --> get the size of the file 
-int get_block_in_use() const --> get how many blocks in use for each file.
-int get_index_block() const --> get the number of the index block that save the information about where the data exist .
-void append_file_size(const int _file_size) --> add the size that the used added into the file on the file_size attribute of the file object.
-void append_block_in_use(const int _block_in_use) --> add the number of blocks that the user add to the file on the block_in_use attribute of the file.
-void set_index_block (int setter) --> set the index block when we want to enter data for the first time to the file .
-bool hasBeenWritten() --> return if the file have information or the file is empty.
+:ballot_box_with_check: void decToBinary(int n, char &c) ---> save the block number that we found for saving data file at char on inedx_block .
+:ballot_box_with_check: FsFile(int _block_size)  --> initializing the FsFile object for first time
+:ballot_box_with_check: int getfile_size() const --> get the size of the file 
+:ballot_box_with_check: int get_block_in_use() const --> get how many blocks in use for each file.
+:ballot_box_with_check: int get_index_block() const --> get the number of the index block that save the information about where the data exist .
+:ballot_box_with_check: void append_file_size(const int _file_size) --> add the size that the used added into the file on the file_size attribute of the file object.
+:ballot_box_with_check: void append_block_in_use(const int _block_in_use) --> add the number of blocks that the user add to the file on the block_in_use attribute of the file.
+:ballot_box_with_check: void set_index_block (int setter) --> set the index block when we want to enter data for the first time to the file .
+:ballot_box_with_check: bool hasBeenWritten() --> return if the file have information or the file is empty.
 
 string getFileName() --> get the name of the file descriptor .
 bool getInUse() const --> getting information about the use of the file .
@@ -50,32 +47,3 @@ int write_block(Block *block) --> write the data that stay in the block into the
 int del_block(Block *block --> delete all the data from the block .
 Block *read_block(int position) --> read all the data from the block .
 void set_block_occupied(int index_of_data_block) --> set information of the block that we take in the bitVector.
-
-
---Program Files--
-ex7_final_proj.2021.cpp - contain all the program 
-
---How to compile?--
-compile:
-g++ ex7.cpp -o v1
-run: ./v1
-
---Input--
-The user can delete or add information from the disk according to the options available in the menu .
-first, user have to format the disk with the input "2" .
-
-for example : 
-input :
-2 
-4
-3 
-'FIRST_FILE_NAME'
-
-explain :
-2 will format the disk .
-4 will open the file on the disk.
-3 will create new file on the disk .
-this will open a new file with name 'FIRST_FILE_NAME'
-
---Output--
-index: 0: FileName: A , isInUse: 1
