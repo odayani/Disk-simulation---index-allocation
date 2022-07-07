@@ -44,6 +44,6 @@ This program simulate how disk manage the data by index allocation method.
 :heavy_check_mark: Block *getIndexBlock(FileDescriptor *fd) --> get index block for the file or make new block for first data .
 :heavy_check_mark: Block *getAvailableBlock(FileDescriptor *fd) --> find empty block to store data into .
 :heavy_check_mark: int write_block(Block *block) --> write the data that stay in the block into the disk.
-:heavy_check_mark: :heavy_check_mark: int del_block(Block *block --> delete all the data from the block .
+:heavy_check_mark: int del_block(Block *block --> delete all the data from the block .
 :heavy_check_mark: Block *read_block(int position) --> read all the data from the block .
 :heavy_check_mark: void set_block_occupied(int index_of_data_block) --> set information of the block that we take in the bitVector.
